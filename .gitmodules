@@ -1,3 +1,12 @@
 [submodule "lib/kdtree"]
 	path = lib/kdtree
 	url = https://github.com/dongli/fortran-kdtree
+[submodule "lib/fiona"]
+	path = lib/fiona
+	url = https://github.com/dongli/fiona
+[submodule "lib/flogger"]
+	path = lib/flogger
+	url = https://github.com/dongli/flogger
+[submodule "lib/container"]
+	path = lib/container
+	url = https://github.com/dongli/fortran-container
