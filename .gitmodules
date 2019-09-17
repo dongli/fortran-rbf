@@ -1,0 +1,3 @@
+[submodule "lib/kdtree"]
+	path = lib/kdtree
+	url = https://github.com/dongli/fortran-kdtree
