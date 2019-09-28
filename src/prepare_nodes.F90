@@ -17,7 +17,7 @@ program prepare_nodes
 
   call kdtree%build(x)
 
-  allocate(ngb_idx(30,size(x, 2)))
+  allocate(ngb_idx(10,size(x, 2)))
 
   call log_notice('Start to find neighbors of each nodes ...')
   do i = 1, size(x, 2)
@@ -36,7 +36,7 @@ contains
 
     real(8), intent(in) :: x(2)
 
-    radius = 0.005d0
+    radius = 0.1d0
 
   end function radius
 
