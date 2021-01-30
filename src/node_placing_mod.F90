@@ -69,7 +69,7 @@ contains
     end do
 
     ! Find the lowest PDP.
-    ym = minval(pdp(2,:num_pdp)); im = minloc(pdp(2,:num_pdp))
+    im = minloc(pdp(2,:num_pdp)); ym = pdp(2,im)
     do while (ym(1) <= box(4))
       num_node = num_node + 1
       ! Assign the lowest PDP as a node.
@@ -124,7 +124,7 @@ contains
         pdp(1,:) = pack(pdp(1,:), pdp(1,:) >= box(1) .and. pdp(1,:) <= box(2))
       end if
       ! Find the next lowest PDP.
-      ym = minval(pdp(2,:num_pdp)); im = minloc(pdp(2,:num_pdp))
+      im = minloc(pdp(2,:num_pdp)); ym = pdp(2,im)
       ! Enlarge array size if necessary.
       if (num_node == init_num_node) then
         init_num_node = init_num_node * 2
